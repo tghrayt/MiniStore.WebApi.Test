@@ -73,7 +73,7 @@ namespace MiniStoreTest
 
 
             // Act
-           
+
             var categoryDto = new CategoryDto
             {
                 CategoryId = 4,
@@ -89,7 +89,50 @@ namespace MiniStoreTest
         }
 
 
-       
+        [Fact]
+        public void DeleteCategory_WhenCalled_ReturnsOkResult()
+        {
+            // Arrange
+            int codeCategorie = 2;
+            _categoryService.Setup(r => r.DeleteCategory(It.IsAny<int>()))
+               .Callback<int>(x => codeCategorie = x);
+
+
+            // Act
+
+            var code = 2;
+            var opération = _categoryController.DeleteCategory(code);
+            _categoryService.Verify(x => x.DeleteCategory(It.IsAny<int>()), Times.Once);
+
+
+            // Assert
+
+            Assert.True(opération.IsCompleted);
+        }
+
+        [Fact]
+        public void UpdateCategory_WhenCalled_ReturnsOkResult()
+        {
+            // Arrange
+            Category categorieTransfert = null;
+            CategoryDto categorie = null;
+            _categoryService.Setup(r => r.UpdateCategory(It.IsAny<int>(), It.IsAny<Category>()))
+               .Callback<int, Category>((x, y) => categorieTransfert = y);
+
+
+            // Act
+
+            var code = 2;
+            var opération = _categoryController.UpdateCategory(code, categorie);
+            _categoryService.Verify(x => x.UpdateCategory(It.IsAny<int>(), It.IsAny<Category>()), Times.Once);
+
+
+            // Assert
+
+            Assert.True(opération.IsCompleted);
+        }
+
+
 
 
     }

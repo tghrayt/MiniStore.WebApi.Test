@@ -148,3 +148,4 @@ C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\obj\Debug\net5.0\Mini
 C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\obj\Debug\net5.0\MiniStoreTest.genruntimeconfig.cache
 C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\bin\Debug\net5.0\Castle.Core.dll
 C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\bin\Debug\net5.0\Moq.dll
+C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\bin\Debug\net5.0\appsettings.Production.json
