@@ -101,13 +101,13 @@ namespace MiniStoreTest
             // Act
 
             var code = 2;
-            var opération = _categoryController.DeleteCategory(code);
+            var operation = _categoryController.DeleteCategory(code);
             _categoryService.Verify(x => x.DeleteCategory(It.IsAny<int>()), Times.Once);
 
 
             // Assert
 
-            Assert.True(opération.IsCompleted);
+            Assert.True(operation.IsCompleted);
         }
 
         [Fact]
@@ -123,13 +123,13 @@ namespace MiniStoreTest
             // Act
 
             var code = 2;
-            var opération = _categoryController.UpdateCategory(code, categorie);
+            var operation = _categoryController.UpdateCategory(code, categorie);
             _categoryService.Verify(x => x.UpdateCategory(It.IsAny<int>(), It.IsAny<Category>()), Times.Once);
 
 
             // Assert
 
-            Assert.True(opération.IsCompleted);
+            Assert.True(operation.IsCompleted);
         }
 
 
