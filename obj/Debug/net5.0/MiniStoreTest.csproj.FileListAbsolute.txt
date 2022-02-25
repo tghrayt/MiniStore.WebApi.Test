@@ -154,3 +154,4 @@ C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\bin\Debug\net5.0\Swas
 C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\bin\Debug\net5.0\MiniStore.xml
+C:\Users\Tghrayt\Documents\Software\Projects\MiniStoreTest\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
